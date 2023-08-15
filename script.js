@@ -104,11 +104,20 @@ calcular.onclick = function() {
     }
 } 
 
+window.addEventListener('keydown', esc)
 
+function esc(event){
+    if(event.key === 'Escape'){
+       resultado.classList.remove('open')
+    }
+}
 
 botaoDoResultado.onclick = function() {
     resultado.classList.remove('open')
 }
+
+
+
 
 let ss = 0
 let hh = 0
